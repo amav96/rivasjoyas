@@ -18,8 +18,8 @@ class CreateQuoteBelongingsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone_number');
-            $table->string('image_path_one');
-            $table->string('image_path_two');
+            $table->dropColumn('image_path_one');
+            $table->dropColumn('image_path_two');
             $table->timestamps();
         });
     }

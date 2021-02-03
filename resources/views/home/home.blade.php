@@ -2,5 +2,7 @@
 
 
 @section('content')
-    @include('home.quote')
+
+    {{-- aca incluyo el formulario --}}
+    @include('home.form_quote')
 @endsection
