@@ -10,23 +10,23 @@ var route = document.getElementById('form_quote').action;
             var comment = document.getElementsByName('comment');
             var form_data = $(this);
 
-            if(name[0].value === ''){
-                alertNegative('Debes ingresar el nombre');
-                return false;
-            }else if (email[0].value === ''){
-                alertNegative('Debes ingresar un email');
-                return false;
-            }else if (!(/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i).test(email[0].value)) {
-                alertNegative('El email ingresado es invalido'); 
-                return false;
-              }
-            else if(phone_number[0].value === ''){
-                alertNegative('Debes ingresar un numero de contacto al cual te contactaremos');
-                return false;
-            }else if (!/^[0-9]+$/.test(phone_number[0].value)) {
-                alertNegative('El número de telefono debe contener solo números')
-                return false;
-              }
+             if(name[0].value === ''){
+                 alertNegative('Debes ingresar el nombre');
+                 return false;
+             }else if (email[0].value === ''){
+                 alertNegative('Debes ingresar un email');
+                 return false;
+             }else if (!(/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i).test(email[0].value)) {
+                 alertNegative('El email ingresado es invalido'); 
+                 return false;
+               }
+             else if(phone_number[0].value === ''){
+                 alertNegative('Debes ingresar un numero de contacto al cual te contactaremos');
+                 return false;
+             }else if (!/^[0-9]+$/.test(phone_number[0].value)) {
+                 alertNegative('El número de telefono debe contener solo números')
+                 return false;
+               }
 
         
             $.ajax({
@@ -35,22 +35,36 @@ var route = document.getElementById('form_quote').action;
             data:form_data.serialize(),
             beforeSend:function(){},
             }).done(function(response){
-                console.log(response)
+                if(response[0].name){
+
+                    alertNegative(response[0].name);
+                    return false;
+                }else if(response[0].email){
+
+                    alertNegative(response[0].email);
+                    return false;
+
+                }else if(response[0].phone_number){
+                    alertNegative(response[0].phone_number);
+                    return false;
+
+                }else if(response[0].success){
+                    
+                    alertPositive('Enviado correctamente');
+                    return false;
+                }
             })
 
         })
 
  
    
-
-
-
 function alertPositive(text){
     Swal.fire({
         icon: 'success',
         title: text,
         showConfirmButton: false,
-        timer: 1500
+        timer: 2500
       });
  }
 

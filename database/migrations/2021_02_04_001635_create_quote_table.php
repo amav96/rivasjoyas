@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateQuoteBelongingsTable extends Migration
+class CreateQuoteTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateQuoteBelongingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('quote_belongings', function (Blueprint $table) {
+        Schema::create('quote', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
             $table->string('phone_number');
-            $table->dropColumn('image_path_one');
-            $table->dropColumn('image_path_two');
+            $table->string('comment');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateQuoteBelongingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('quote_belongings');
+        Schema::dropIfExists('quote');
     }
 }
