@@ -1,14 +1,25 @@
+
+/* style rivas joyas developer Alvaro Aliaga alvaroamav96@gmail.com
+
+1) navbar
+2) sidebar
+
+*/
+
 body{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
 }
 
+/* 1) navbar */ 
 
 .navbar {
+   
     display: flex;
     justify-content: space-between;
     background: #5B1235;
+   
     
 }
 .navbar-section{
@@ -41,3 +52,54 @@ body{
  
    height: 2rem;
 }
+
+/* 2) sidebar */
+
+.sidebar{
+    
+    height: 100%;
+    position: fixed;
+    background: #5B1235;
+    display: flex;
+    z-index: 500;
+    padding: 10px;
+    top: 50px;
+    left: -100%;  
+    transition: 350ms;
+}
+
+.sidebar.active{
+    left: 0;
+    transition: 350ms;
+}
+
+
+.nav-menu-items{
+
+    list-style:none;
+    /* background-color: blue; */
+    display: flex;
+    padding: 0px;
+    margin: 0 10px;
+    
+}
+.menu-text {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 1.5rem 0;
+    color: white;
+    /* background-color: green; */
+}
+
+.menu-text i{
+    margin-left: 10px;
+}
+.menu-text span{
+    margin-right: 10px;
+}
+
+
+

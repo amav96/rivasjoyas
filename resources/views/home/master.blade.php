@@ -9,8 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="routeName" content="{{ URL::to('/') }}">
     <link rel="stylesheet" href="{{ url('assets/css/main.css') }}">
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -32,7 +32,7 @@
         </div>
 
         <div class="navbar-section">
-            <div class="sub-navbar bars">
+            <div class="sub-navbar bars" id="show-menu">
                 <i class="fas fa-bars"></i>
             </div>
 
@@ -58,15 +58,42 @@
             </div>
 
         </div>
-
-        {{-- <a href="" class="menu-bars" id="show-menu">
-            <i class="fas fa-bars"></i>
-        </a> --}}
     </div>
 
-    <nav id="nav-menu">
+    <nav class="sidebar">
         <ul class="nav-menu-items">
+            <div class="bar-lateral">
+                <li>
+                    <div class="menu-text">
+                        <span>Que compramos</span>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </li>
 
+
+                <li>
+                    <div class="menu-text">
+                        <span>Rolex</span>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="menu-text">
+                        <span>Diamantes</span>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="menu-text">
+                        <span>Contacto</span>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </li>
+            </div>
         </ul>
     </nav>
 
@@ -78,6 +105,7 @@
     {{-- aca deberia ir el footer --}}
 
     <script src="{{ asset('assets/js/quote/main.js') }}"> </script>
+    <script src="{{ asset('assets/js/style/main.js') }}"> </script>
 
 
 </body>
