@@ -3,13 +3,32 @@
 
 1) navbar
 2) sidebar
+3) hero
+4) red social
+5) quote 
+6) first-title
+7) buy boxes
 
 */
+
+/* colors */
+
+.txtwhite{
+    color: white;
+}
+.txtredwine{
+    color: #5B1235;
+}
+
+.txtgold{
+  color: #E9BE64;
+}
 
 body{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+    background: #151414 !important;
 }
 
 /* 1) navbar */ 
@@ -100,6 +119,169 @@ body{
 .menu-text span{
     margin-right: 10px;
 }
+
+ /* 3) first section */
+
+ .hero{
+    /* transform: translateY(-3%); */
+  
+     background-image : url('/assets/img/static/manikin/manikin1p.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+    height: 80vh;
+ }
+
+ /*  4) Red social */
+
+.content-red-social {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+  
+    
+}
+
+
+.box-red-social img {
+    height: 2rem;
+    margin: 0px 0.5rem;
+
+}
+
+/*5) quote */
+
+.content-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.7rem;
+   
+}
+.box-quote{
+    display: flex;
+}
+.sub-box-quote{
+    display: flex;
+    
+
+}
+.mini-box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn-quote{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0.7rem 1rem;
+    margin: 0.5rem 0px;
+}
+
+.btn-quote:nth-last-child(2){
+    background: #5B1235;
+    
+}
+.btn-quote:nth-last-child(1){
+    background: #fff;
+  
+}
+
+
+.btn-quote span{
+    margin: 0px 2px;
+    font-weight: 650;
+    letter-spacing: 1.2px;
+}
+
+.btn-quote img{
+    height: 1.9rem;
+    margin: 0px 2px;
+}
+
+/* banner */
+
+.content-banner{
+
+    transform: translateY(125%);
+    /* margin-top: 10rem; */
+   
+}
+
+.box-banner{
+    position: relative;
+}
+.banner-text {
+    position: relative;
+    top: -120px;
+    left: 10px;
+    
+}
+
+/* 6) first-title */
+
+.first-title {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+
+/* 7) buy boxes */
+
+.content-buy-boxes {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.buy-boxes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #5B1235;
+    color:  #E9BE64;
+    border-radius: 15px;
+    margin: 0.3rem 0.3rem;
+    padding: 0.3rem;
+    width: 10rem;
+    height: 9rem;
+    transition: 0.5s;
+}
+
+.buy-boxes:hover {
+    
+    background:   white;
+    color: #5B1235;
+    transition: 0.5s;
+    
+    
+}
+.buy-boxes span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.buy-boxes img {
+    height: 6rem;
+}
+
+
+
+
+
+
 
 
 
