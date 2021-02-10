@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center m-4">
+<div class="d-flex justify-content-center m-4 content-form">
 
 
     <form id="form_quote" action="{{ url('/quote') }}" method="POST">
@@ -24,18 +24,13 @@
 
 
         <div class="row">
-            <div class="form-group">
-                <textarea class="form-control" type="text" name="comment" placeholder="Comentario"></textarea>
-            </div>
+            <textarea class="form-control" type="text" name="comment"
+                placeholder="Cuentanos sobre tus pertenencias"></textarea>
         </div>
 
 
-        <div class="row">
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-success col-12">Enviar</button>
-            </div>
-
+        <div class="row btn-submit">
+            <button type="submit" class="btn-send btn btn-success col-12">Enviar</button>
         </div>
 
     </form>

@@ -94,16 +94,141 @@
         <img src="{{ asset('assets/img/static/rings/ring-two.png') }}" alt="">
         <span>Alianzas de oro</span>
     </div>
+    <div class="buy-boxes">
+        <img src="{{ asset('assets/img/static/ingot/international.png') }}" alt="">
+        <span>Lingote Internacional</span>
+    </div>
+    <div class="buy-boxes">
+        <img src="{{ asset('assets/img/static/ingot/national.png') }}" alt="">
+        <span>Lingote Nacional</span>
+    </div>
+    <div class="buy-boxes">
+        <img src="{{ asset('assets/img/static/diamond/yellow.png') }}" alt="">
+        <span>Diamante Radiante</span>
+    </div>
+    <div class="buy-boxes">
+        <img src="{{ asset('assets/img/static/diamond/ovalado.png') }}" alt="">
+        <span>Diamante ovalado</span>
+    </div>
+    <div class="buy-boxes">
+        <img src="{{ asset('assets/img/static/money/money-classic.png') }}" alt="">
+        <span>Diamante Radiante</span>
+    </div>
+    <div class="buy-boxes">
+        <img src="{{ asset('assets/img/static/money/old-money.png') }}" alt="">
+        <span>Diamante ovalado</span>
+    </div>
 
 </div>
 
+<div class="second-title">
+    <h4>¿Necesita vender oro, joyas o antigüedades?</h4>
+</div>
+
+<div class="content-more-information">
+    <div class="box-information">
+        <p>Compramos oro, joyas, diamantes, alhajas, brillantes, relojes, monedas y antigüedades.
+            ¡Tenemos la mejor cotización del mercado! Utilice el formulario a continuación para
+            tasar sus pertenencias.
+        </p>
+    </div>
+</div>
 
 
-
-
-
-
+<div class="three-title">
+    <h5>Cotización Online</h5>
+</div>
 
 {{-- aca incluyo el formulario --}}
 @include('home.form_quote')
+
+
+<div class="four-title">
+    <h6>Nuestros operadores estan atentos a tu cotización</h6>
+</div>
+
+<div class="five-title">
+    <span>Contacto</span>
+</div>
+
+<div class="content-contact">
+    <div class="box-contact">
+
+        <div class="icon">
+            <img src="{{ asset('assets/img/static/icons/pin.png') }}" alt="">
+        </div>
+        <div class="contact-text">
+            <div class="text-contact-info">
+                <span class="main-text">Av. Rivadavia 1600, Centro</span>
+            </div>
+            <div class="text-contact-info">
+                <span class="children-main">CABA - Argentina</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-contact">
+        <div class="icon">
+            <img src="{{ asset('assets/img/static/icons/phone.png') }}" alt="">
+        </div>
+        <div class="contact-text">
+            <div class="text-contact-info">
+                <span class="main-text">Internacional:</span><span class="textLight"> +54 11 5113-7451 </span>
+            </div>
+            <div class="text-contact-info">
+                <span class="main-text">Argentina</span><span class="textLight"> +54 11 6351-5316 </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box-contact">
+        <div class="icon">
+            <img src="{{ asset('assets/img/static/icons/enveloper.png') }}" alt="">
+        </div>
+        <div class="contact-text">
+            <div class="text-contact-info">
+                <span class="main-text">contacto@rivasjoyas.com</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box-contact">
+        <div class="icon">
+            <img src="{{ asset('assets/img/static/icons/clock.png') }}" alt="">
+        </div>
+        <div class="contact-text">
+            <div class="text-contact-info">
+                <span class="main-text">Lun / Vie 9:00 a 18:00 hs</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.802859269606!2d-58.39123068519505!3d-34.609146265291514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac3577486e5%3A0xe4b3f2dd6f2207f9!2sRivadavia%201600%2C%20C1077%20CABA!5e0!3m2!1ses-419!2sar!4v1612919473531!5m2!1ses-419!2sar"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="box-footer">
+        <img class="img-logo" src="{{ asset('assets/img/static/logo.png') }}" alt="">
+    </div>
+    <div class="box-footer">
+        <span>Todos los derechos reservados - Rivas Joyas 2021</span>
+    </div>
+    <div class="box-footer">
+        <div class="img-footer">
+            <img class="img-footer-red" src="{{ asset('assets/img/static/icons/instagram.png') }}" alt="">
+            <img class="img-footer-red" src="{{ asset('assets/img/static/icons/facebook.png') }}" alt="">
+        </div>
+    </div>
+</div>
+
 @endsection

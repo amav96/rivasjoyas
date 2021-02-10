@@ -31,7 +31,7 @@
 
         </div>
 
-        <div class="navbar-section">
+        <div class="navbar-section nav-sm">
             <div class="sub-navbar bars" id="show-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -41,20 +41,37 @@
         <div class="navbar-section nav-lg">
 
             <div class="box-nav-bar">
-                <i class="fas fa-user"></i>
-                <span>Que compramos</span>
+                <div class="sub-box-nav">
+                    <img src="{{ asset('assets/img/static/icons/money.png') }}" alt="">
+                </div>
+                <div class="sub-box-nav">
+                    <span>Que compramos</span>
+                </div>
+
             </div>
             <div class="box-nav-bar">
-                <i class="fas fa-user"></i>
-                <span>Rolex</span>
+                <div class="sub-box-nav">
+                    <img src="{{ asset('assets/img/static/icons/rolex.png') }}" alt="">
+                </div>
+                <div class="sub-box-nav">
+                    <span>Rolex</span>
+                </div>
             </div>
             <div class="box-nav-bar">
-                <i class="fas fa-user"></i>
-                <span>Diamantes</span>
+                <div class="sub-box-nav">
+                    <img src="{{ asset('assets/img/static/icons/diamante.png') }}" alt="">
+                </div>
+                <div class="sub-box-nav">
+                    <span>Diamantes</span>
+                </div>
             </div>
             <div class="box-nav-bar">
-                <i class="fas fa-user"></i>
-                <span>Contacto</span>
+                <div class="sub-box-nav">
+                    <img src="{{ asset('assets/img/static/icons/phone-sm.png') }}" alt="">
+                </div>
+                <div class="sub-box-nav">
+                    <span>Contacto</span>
+                </div>
             </div>
 
         </div>

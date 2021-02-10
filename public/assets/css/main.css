@@ -8,6 +8,13 @@
 5) quote 
 6) first-title
 7) buy boxes
+8) second title
+9) content more info 
+10) online quote
+11) five title
+12) contact 
+13) mapa
+14) footer
 
 */
 
@@ -66,7 +73,7 @@ body{
 
  .nav-lg{
     display: none;
-} 
+ } 
 .logo img {
  
    height: 2rem;
@@ -251,7 +258,7 @@ body{
     align-items: center;
     flex-direction: column;
     background: #5B1235;
-    color:  #E9BE64;
+    color:  white;
     border-radius: 15px;
     margin: 0.3rem 0.3rem;
     padding: 0.3rem;
@@ -271,11 +278,257 @@ body{
 .buy-boxes span {
     font-size: 15px;
     font-weight: 500;
+    
+   
 }
 
 .buy-boxes img {
     height: 6rem;
 }
+
+
+/* 8) second title */
+
+.second-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.second-title h4{
+    color: white;
+}
+
+/* 9) content more info */
+
+.content-more-information{
+
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    width: 20rem;
+   
+
+}
+.box-information{
+    
+    padding: 0.5rem 1rem;
+    background: #5B1235;
+    border-radius: 15px;
+    
+}
+.box-information p {
+    color: white;
+    font-weight: 500;
+}
+
+/* 10) online quote */
+
+
+.three-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem auto;
+    
+
+}
+
+.three-title h5{
+    width: 12rem;
+    background: #f5b52c;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,1);
+}
+
+
+/* form */
+
+
+
+/* footer del form */
+
+.four-title{
+    display: flex;
+    justify-content: center;
+}
+
+.four-title h6{
+    width: 19rem;
+    color:#f5b52c;
+    text-align: center;
+}
+
+.btn-submit{
+    margin: 1rem 0;
+}
+
+.btn-submit .btn-send{
+    background:#5B1235 !important;
+    border: none;
+}
+
+/* 11) five title */
+
+.five-title{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.five-title span{
+    color: white;
+    font-weight: 500;
+    font-size: 1.9rem;
+    text-align: center;
+    
+}
+
+/* 12 contact */
+
+
+.content-contact{
+
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  
+}
+
+.box-contact{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.3rem auto;
+
+}
+
+.box-contact{
+  
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+   
+}
+
+.icon {
+    margin: 0 0.7rem;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    text-align: left;
+    width: 15rem;
+    margin: 0 0.5rem;
+}
+
+
+.text-contact-info span{
+    color: white;
+}
+.text-contact-info .main-text {
+    font-weight: 600;
+}
+
+.text-contact-info .children-main {
+    font-weight: 400;
+}
+
+.text-contact-info .textLight {
+    color: rgb(146, 135, 135);
+}
+
+
+/* 13) mapa */
+
+.map{
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 20.5rem;
+    
+
+}
+.map iframe{
+    border-radius: 20px;
+}
+
+/* 14) footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #161616;
+    box-shadow: 0 10px 20px rgba(0,0,0,3);
+    margin: 1rem auto 0 auto;
+}
+
+
+.box-footer{
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-footer .img-logo{
+    width: 8rem;
+}
+.box-footer span{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+.img-footer .img-footer-red
+{
+    margin: 0 0.5rem;
+}
+
+@media (min-width:720px){
+
+    /* navbar */
+
+   .nav-sm {
+       display: none;
+   }
+
+   .nav-lg{
+       display: flex;
+   }
+
+   .box-nav-bar{
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       align-items: center;
+       margin: 0 0.5rem;
+   }
+   .sub-box-nav{
+       margin: 0 0.2rem;
+   }
+
+   .box-nav-bar span{
+       color: white;
+   }
+
+
+}
+
 
 
 
