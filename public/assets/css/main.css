@@ -7,7 +7,7 @@
 4) red social
 5) quote 
 6) first-title
-7) buy boxes
+7) buy boxes 
 8) second title
 9) content more info 
 10) online quote
@@ -28,14 +28,46 @@
 }
 
 .txtgold{
-  color: #E9BE64;
+  color: #f5b52c;
 }
+
+.txtGrayLight{
+    color: #bdb9ad;
+}
+
+.bgredwine{
+    background: #5B1235;
+}
+.bgwhite{
+    background: white;
+}
+.bgyellow{
+    background:  #ebb43e;
+}
+
+
 
 body{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
     background: #151414 !important;
+}
+
+/* font-size */
+
+.font-big-30{
+  font-size: 30px;
+  font-weight: 600;
+
+}
+.font-normal-19{
+    font-size: 19px;
+    font-weight: 500;
+}
+.font-normal-17{
+    font-size: 17px;
+
 }
 
 /* 1) navbar */ 
@@ -133,11 +165,10 @@ body{
     /* transform: translateY(-3%); */
   
      background-image : url('/assets/img/static/manikin/manikin1p.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    
-    height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        min-height: 80vh;
  }
 
  /*  4) Red social */
@@ -158,6 +189,10 @@ body{
 }
 
 /*5) quote */
+
+.main-quote-desktop{
+    display: none;
+}
 
 .content-quote {
     display: flex;
@@ -214,11 +249,11 @@ body{
 
 /* banner */
 
+.box-quote{
+ margin-bottom: 9rem;
+}
 .content-banner{
-
-    transform: translateY(125%);
-    /* margin-top: 10rem; */
-   
+    margin-top: 9rem;
 }
 
 .box-banner{
@@ -271,15 +306,15 @@ body{
     
     background:   white;
     color: #5B1235;
+    font-weight: 500;
     transition: 0.5s;
     
     
 }
 .buy-boxes span {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 500 !important;
     
-   
 }
 
 .buy-boxes img {
@@ -302,20 +337,24 @@ body{
 
 /* 9) content more info */
 
-.content-more-information{
+.box-information:nth-last-child(1){
+   display: none;
+}
 
+
+.main-content-information{
     display: flex;
     justify-content: center;
-    text-align: left;
     margin: auto;
-    width: 20rem;
-   
-
+    width: 18rem;
+    background: #5B1235;
+    border-radius: 15px;
 }
+
 .box-information{
     
     padding: 0.5rem 1rem;
-    background: #5B1235;
+    
     border-radius: 15px;
     
 }
@@ -503,29 +542,259 @@ body{
 
     /* navbar */
 
-   .nav-sm {
-       display: none;
+    .navbar{
+        
+        height: 4.5rem;
+    }
+
+    .hero{
+        /* transform: translateY(-3%); */
+        
+            background-image:none;
+            /* margin-bottom: 10rem; */
+           
+            
+        
+        }
+
+
+    .nav-sm {
+        display: none;
+    }
+
+    .nav-lg{
+        display: flex;
+    }
+
+    .box-nav-bar{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 0 0.5rem;
+    }
+    .sub-box-nav{
+        margin: 0 0.2rem;
+    }
+
+    .box-nav-bar span{
+        color: white;
+    }
+
+    /* icon */
+
+    .content-red-social{
+        margin-top: 1rem;
+    }
+
+
+    .box-red-social{
+        margin: 0 1rem;
+    }
+
+    /* 5 quote */
+
+
+
+    .content-quote{
+        display: none;
+    }
+
+    .main-quote-desktop{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 1rem auto;
+    }
+
+    .content-quote-desktop:nth-last-child(2)  {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .content-quote-desktop:nth-last-child(1)  {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+
+    .content-quote-desktop .content-text-desktop{
+        width: 25rem;
+    }
+
+    .content-text-desktop:nth-last-child(4){
+        line-height: 2rem;
+    }
+
+    .content-quote-desktop img:nth-last-child(2) {
+        height: 3rem;
+        width: 16rem;
+      
+    }
+    /* pendiente */
+
+    .content-quote-desktop img:nth-last-child(1) {
+        
+        width: 19rem;
+    }
+  /* pendiente */
+
+    .btn-main-desktop img {
+        width: 2.5rem !important;
+        height: 2rem;
+        margin: 0 0.2rem;
+       
+    }
+    .btn-main-desktop span {
+        margin: 0 0.2rem;
+    }
+    /* 6 first-title */
+
+   .first-title{
+       margin-bottom: 3rem;
    }
 
-   .nav-lg{
-       display: flex;
+    .content-text-desktop{
+        margin: 0.5rem 0;
+    }
+
+    /* buttons */
+
+    .main-content-btn{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 1rem 0;
+        
+
+    }
+
+    .btn-main-desktop{
+       
+        width: 11rem;
+        margin: 0 0.3rem;
+        padding: 5px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        flex-direction: row;
+        
+    }
+    
+    /* 7) buy boxes  */
+
+    
+    .content-buy-boxes{
+       
+        margin: 0 auto;
+        width: 40rem;
+    }
+
+    /* second title */
+
+    .second-title{
+        margin: 4rem auto;
+    }
+
+    /* 9) content more info  */
+
+    
+    .main-content-information{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        width:100%;
+        background: #5B1235;
+        padding: 1rem 0;
+        border-radius: 0rem;
+    }
+
+    .box-information{
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 18px;
+       
+        border-radius: 0px;
+        
+       
+    }
+
+    /* pendiente */
+
+    .box-information:nth-last-child(1){
+        display: flex;
+     }
+   
+
+   .box-information p{
+     
+       width: 40rem;
    }
 
-   .box-nav-bar{
-       display: flex;
-       justify-content: center;
-       align-content: center;
-       align-items: center;
-       margin: 0 0.5rem;
-   }
-   .sub-box-nav{
-       margin: 0 0.2rem;
-   }
+    .box-information img{
+        height: 9rem;
+       
+    }
+   
+   
 
-   .box-nav-bar span{
-       color: white;
-   }
+}
 
+
+
+
+@media (min-width:1200px){
+
+    .content-buy-boxes{
+       
+        margin: 0 auto;
+        width: 60rem;
+    }
+
+    .content-quote-desktop img:nth-last-child(2) {
+        height: 3rem;
+        width: 16rem;
+      
+    }
+    /* pendiente */
+
+    .content-quote-desktop img:nth-last-child(1) {
+        
+        width: 19rem;
+    }
+  /* pendiente */
+
+}
+
+@media (min-width:1400px){
+
+    .hero{
+         margin-bottom: -5rem !important; 
+        }
+
+        /* icon red socialk */
+
+       
+
+        .main-quote-desktop{
+            margin-top: 3rem;
+            
+           
+        }
 
 }
 

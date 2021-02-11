@@ -14,6 +14,43 @@
         </div>
     </div>
 
+
+    <div class="main-quote-desktop">
+        <div class="content-quote-desktop">
+            <img src="{{ asset('assets/img/static/logo-1.png') }}" alt="">
+            <img src="{{ asset('assets/img/static/manikin/stand-necklace.png') }}" alt="">
+        </div>
+        <div class="content-quote-desktop">
+            <div class="content-text-desktop font-big-30">
+                <span class="txtwhite">Compramos su oro al precio</span> <span class="txtgold">mas alto de
+                    argentina</span>
+            </div>
+            <div class="content-text-desktop font-normal-19 ">
+                <span class="txtwhite">Pagamos el <span class="txtgold"> oro </span> hasta $13000 pesos el gramo,<span
+                        class="txtgold"> brillantes </span> hasta USD 19.000 dolares el kilate
+            </div>
+            <div class="content-text-desktop font-normal-17 txtGrayLight">
+                Obtenga dinero al instante por sus pertenencias. Tasamos y lo asesoramos en la compra de sus
+                alhajas,
+                joyas, diamantes, antiguedades y relojes
+            </div>
+
+            <div class="main-content-btn">
+                <div class="btn-main-desktop bgredwine">
+                    <span class="txtwhite"><strong>Vender Oro</strong></span>
+                    <img src="{{ asset('assets/img/static/icons/dollar.svg') }}" alt="">
+                </div>
+                <div class="btn-main-desktop bgyellow">
+                    <span class="txtwhite"><strong>Cotizar ahora!</strong></span>
+                    <img src="{{ asset('assets/img/static/icons/calculator.svg') }}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {{-- movil desing hero--}}
+
     <div class="content-quote">
 
         <div class="box-quote">
@@ -24,7 +61,7 @@
                         <img src="{{ asset('assets/img/static/icons/dollar.svg') }}" alt="">
                     </div>
                     <div class="btn-quote">
-                        <span class="txtredwine">Cotizá Online</span>
+                        <span class="txtredwine">Cotizár ahora</span>
                         <img src="{{ asset('assets/img/static/icons/calculator.svg') }}" alt="">
                     </div>
                 </div>
@@ -54,8 +91,10 @@
             </div>
         </div>
     </div>
+    {{-- end movil desing hero --}}
 
 </div>
+
 
 <div class="first-title">
     <h1><span class="txtwhite">¿Que</span> <span class="txtgold">compramos?</span></h1>
@@ -125,13 +164,19 @@
     <h4>¿Necesita vender oro, joyas o antigüedades?</h4>
 </div>
 
-<div class="content-more-information">
+<div class="main-content-information">
+
     <div class="box-information">
-        <p>Compramos oro, joyas, diamantes, alhajas, brillantes, relojes, monedas y antigüedades.
+        <p>Compramos <span class="txtgold">oro</span>, joyas, diamantes, alhajas, brillantes, relojes, monedas y
+            antigüedades.
             ¡Tenemos la mejor cotización del mercado! Utilice el formulario a continuación para
             tasar sus pertenencias.
         </p>
     </div>
+    <div class="box-information ">
+        <img src="{{ asset('assets/img/static/manikin/unnamed.png') }}" alt="">
+    </div>
+
 </div>
 
 
