@@ -30,7 +30,9 @@
 
 
         <div class="row btn-submit">
-            <button type="submit" class="btn-send btn btn-success col-12">Enviar</button>
+            <button id="send" type="submit" class="btn-send btn btn-success col-12 "><span
+                    class="spinner-border hiddenLoader loaderBtn" role="status"></span> <span
+                    class="txtSend">Enviar</span></button>
         </div>
 
     </form>

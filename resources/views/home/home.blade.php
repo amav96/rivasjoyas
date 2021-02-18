@@ -1,15 +1,16 @@
 @extends('home.master')
 
+@section('title','Compramos oro')
 
 @section('content')
 
 <div class="hero">
 
     <div class="content-red-social">
-        <div class="box-red-social">
+        <div class="box-red-social instagram_nav">
             <img src="{{ asset('assets/img/static/icons/instagram.png') }}" alt="" class="icon-red-social">
         </div>
-        <div class="box-red-social">
+        <div class="box-red-social facebook_nav">
             <img src="{{ asset('assets/img/static/icons/facebook.png') }}" alt="" class="icon-red-social">
         </div>
     </div>
@@ -17,7 +18,7 @@
 
     <div class="main-quote-desktop">
         <div class="content-quote-desktop">
-            <img src="{{ asset('assets/img/static/logo-1.png') }}" alt="">
+            <img src="{{ asset('assets/img/static/logo-3.png') }}" alt="">
             <img src="{{ asset('assets/img/static/manikin/stand-necklace.png') }}" alt="">
         </div>
         <div class="content-quote-desktop">
@@ -36,13 +37,13 @@
             </div>
 
             <div class="main-content-btn">
-                <div class="btn-main-desktop bgredwine">
+                <div class="btn-main-desktop bgredwine sell_gold_desktop">
                     <span class="txtwhite"><strong>Vender Oro</strong></span>
-                    <img src="{{ asset('assets/img/static/icons/dollar.svg') }}" alt="">
+                    <img src="{{ asset('assets/img/static/icons/gold-ingots.svg') }}" alt="">
                 </div>
-                <div class="btn-main-desktop bgyellow">
+                <div class="btn-main-desktop bgyellow quote_desktop">
                     <span class="txtwhite"><strong>Cotizar ahora!</strong></span>
-                    <img src="{{ asset('assets/img/static/icons/calculator.svg') }}" alt="">
+                    <img src="{{ asset('assets/img/static/icons/money-bag.svg') }}" alt="">
                 </div>
             </div>
 
@@ -56,13 +57,13 @@
         <div class="box-quote">
             <div class="sub-box-quote">
                 <div class="mini-box">
-                    <div class="btn-quote">
+                    <div class="btn-quote sell_gold_mobile">
                         <span class="txtwhite">Vender Oro</span>
-                        <img src="{{ asset('assets/img/static/icons/dollar.svg') }}" alt="">
+                        <img src="{{ asset('assets/img/static/icons/gold-ingots.svg') }}" alt="">
                     </div>
-                    <div class="btn-quote">
+                    <div class="btn-quote quote_mobile">
                         <span class="txtredwine">Cotizár ahora</span>
-                        <img src="{{ asset('assets/img/static/icons/calculator.svg') }}" alt="">
+                        <img src="{{ asset('assets/img/static/icons/money-bag.svg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -95,8 +96,12 @@
 
 </div>
 
+<div class="img-stick contact_whatsapp">
+    <img src="{{ asset('assets/img/static/icons/whatsapp.png') }}" alt="">
+</div>
 
-<div class="first-title">
+
+<div class="first-title" id="buy">
     <h1><span class="txtwhite">¿Que</span> <span class="txtgold">compramos?</span></h1>
 </div>
 
@@ -109,7 +114,7 @@
         <img src="{{ asset('assets/img/static/manikin/neckleacle-three.png') }}" alt="">
         <span>Cadena de oro Fino</span>
     </div>
-    <div class="buy-boxes">
+    <div class="buy-boxes" id="rolex">
         <img src="{{ asset('assets/img/static/rolex/omega.png') }}" alt="">
         <span>Omega</span>
     </div>
@@ -141,7 +146,7 @@
         <img src="{{ asset('assets/img/static/ingot/national.png') }}" alt="">
         <span>Lingote Nacional</span>
     </div>
-    <div class="buy-boxes">
+    <div class="buy-boxes" id="daimond">
         <img src="{{ asset('assets/img/static/diamond/yellow.png') }}" alt="">
         <span>Diamante Radiante</span>
     </div>
@@ -151,11 +156,11 @@
     </div>
     <div class="buy-boxes">
         <img src="{{ asset('assets/img/static/money/money-classic.png') }}" alt="">
-        <span>Diamante Radiante</span>
+        <span>Moneda Clasica</span>
     </div>
     <div class="buy-boxes">
         <img src="{{ asset('assets/img/static/money/old-money.png') }}" alt="">
-        <span>Diamante ovalado</span>
+        <span>Moneda de Oro</span>
     </div>
 
 </div>
@@ -167,8 +172,8 @@
 <div class="main-content-information">
 
     <div class="box-information">
-        <p>Compramos <span class="txtgold">oro</span>, joyas, diamantes, alhajas, brillantes, relojes, monedas y
-            antigüedades.
+        <p>Compramos <span class="txtgold">oro, joyas, diamantes, alhajas, brillantes, relojes, monedas y
+                antigüedades.</span>
             ¡Tenemos la mejor cotización del mercado! Utilice el formulario a continuación para
             tasar sus pertenencias.
         </p>
@@ -189,76 +194,85 @@
 
 
 <div class="four-title">
-    <h6>Nuestros operadores estan atentos a tu cotización</h6>
+    <div class="content-four-title">
+        <img src="{{ asset('assets/img/static/icons/support.png') }}" alt="">
+    </div>
+    <div class="content-four-title">
+        <h6>Nuestros operadores estan atentos a tu cotización</h6>
+    </div>
+
 </div>
 
-<div class="five-title">
+<div class="five-title" id="contact">
     <span>Contacto</span>
 </div>
 
-<div class="content-contact">
-    <div class="box-contact">
+<div class="contact-more-quote">
 
-        <div class="icon">
-            <img src="{{ asset('assets/img/static/icons/pin.png') }}" alt="">
-        </div>
-        <div class="contact-text">
-            <div class="text-contact-info">
-                <span class="main-text">Av. Rivadavia 1600, Centro</span>
+    <div class="content-contact">
+
+        <div class="box-contact">
+            <div class="icon">
+                <img src="{{ asset('assets/img/static/icons/pin.png') }}" alt="">
             </div>
-            <div class="text-contact-info">
-                <span class="children-main">CABA - Argentina</span>
+            <div class="contact-text">
+                <div class="text-contact-info">
+                    <span class="main-text">Av. Rivadavia 1600, Centro</span>
+                </div>
+                <div class="text-contact-info">
+                    <span class="children-main">CABA - Argentina</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-contact">
+            <div class="icon">
+                <img src="{{ asset('assets/img/static/icons/phone-sm.png') }}" alt="">
+            </div>
+            <div class="contact-text">
+                <div class="text-contact-info phone_one">
+                    <span class="main-text ">Internacional:</span><span class="textLight"> +54 11
+                        5113-7451 </span>
+                </div>
+                <div class="text-contact-info phone_two">
+                    <span class="main-text ">Argentina:</span><span class="textLight"> +54 11 6351-5316
+                    </span>
+                </div>
             </div>
         </div>
 
+        <div class="box-contact">
+            <div class="icon">
+                <img src="{{ asset('assets/img/static/icons/enveloper.png') }}" alt="">
+            </div>
+            <div class="contact-text">
+                <div class="text-contact-info email">
+                    <span class="main-text">contacto@rivasjoyas.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-contact">
+            <div class="icon">
+                <img src="{{ asset('assets/img/static/icons/clock.png') }}" alt="">
+            </div>
+            <div class="contact-text">
+                <div class="text-contact-info">
+                    <span class="main-text">Lun / Vie 9:00 a 18:00 hs</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="box-contact">
-        <div class="icon">
-            <img src="{{ asset('assets/img/static/icons/phone.png') }}" alt="">
-        </div>
-        <div class="contact-text">
-            <div class="text-contact-info">
-                <span class="main-text">Internacional:</span><span class="textLight"> +54 11 5113-7451 </span>
-            </div>
-            <div class="text-contact-info">
-                <span class="main-text">Argentina</span><span class="textLight"> +54 11 6351-5316 </span>
-            </div>
+    <div class="content-contact">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.802859269606!2d-58.39123068519505!3d-34.609146265291514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac3577486e5%3A0xe4b3f2dd6f2207f9!2sRivadavia%201600%2C%20C1077%20CABA!5e0!3m2!1ses-419!2sar!4v1612919473531!5m2!1ses-419!2sar"
+                frameborder="0" style="border:0;" aria-hidden="false" tabindex="0">
+            </iframe>
         </div>
     </div>
-
-
-    <div class="box-contact">
-        <div class="icon">
-            <img src="{{ asset('assets/img/static/icons/enveloper.png') }}" alt="">
-        </div>
-        <div class="contact-text">
-            <div class="text-contact-info">
-                <span class="main-text">contacto@rivasjoyas.com</span>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="box-contact">
-        <div class="icon">
-            <img src="{{ asset('assets/img/static/icons/clock.png') }}" alt="">
-        </div>
-        <div class="contact-text">
-            <div class="text-contact-info">
-                <span class="main-text">Lun / Vie 9:00 a 18:00 hs</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.802859269606!2d-58.39123068519505!3d-34.609146265291514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac3577486e5%3A0xe4b3f2dd6f2207f9!2sRivadavia%201600%2C%20C1077%20CABA!5e0!3m2!1ses-419!2sar!4v1612919473531!5m2!1ses-419!2sar"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
-        </iframe>
-    </div>
-
 </div>
 
 <div class="footer">
@@ -270,8 +284,10 @@
     </div>
     <div class="box-footer">
         <div class="img-footer">
-            <img class="img-footer-red" src="{{ asset('assets/img/static/icons/instagram.png') }}" alt="">
-            <img class="img-footer-red" src="{{ asset('assets/img/static/icons/facebook.png') }}" alt="">
+            <img class="img-footer-red instagram_footer_mobile"
+                src="{{ asset('assets/img/static/icons/instagram.png') }}" alt="">
+            <img class="img-footer-red facebook_footer_mobile" src="{{ asset('assets/img/static/icons/facebook.png') }}"
+                alt="">
         </div>
     </div>
 </div>

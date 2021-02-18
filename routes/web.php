@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::post('/quote','Quote\QuoteController@Quote');
+
+Route::post('/statistic','Statistic\StatisticController@Statistic');

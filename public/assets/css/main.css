@@ -45,7 +45,17 @@
     background:  #ebb43e;
 }
 
+/* assets js */
 
+.hiddenLoader{
+    display: none !important;
+}
+
+/* pointer */
+
+#buy-side,#buy-side-desktop,#buy-role-desktop,#buy-role,#buy-daimond-desktop,#buy-daimond,#go-contact-desktop,#go-contact,.sell_gold_desktop,.sell_gold_mobile,.quote_desktop,.quote_mobile,.email:hover{
+    cursor: pointer;
+}
 
 body{
     margin: 0 !important;
@@ -53,6 +63,17 @@ body{
     box-sizing: border-box !important;
     background: #151414 !important;
 }
+
+.img-stick{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.hero{
+    margin-top: 3rem;
+}
+
 
 /* font-size */
 
@@ -100,6 +121,11 @@ body{
     font-size: 25px;
     color: white;
     padding: 0 9px 0 0;
+}
+
+.sub-box-nav img{
+      
+    height: 2rem;
 }
 
 
@@ -152,8 +178,9 @@ body{
     /* background-color: green; */
 }
 
-.menu-text i{
+.menu-text img{
     margin-left: 10px;
+    height: 2rem;
 }
 .menu-text span{
     margin-right: 10px;
@@ -395,12 +422,29 @@ body{
 .four-title{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+   
+  
+}
+.content-four-title{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: 0.5rem auto;
+
 }
 
 .four-title h6{
-    width: 19rem;
+    width: 16rem;
     color:#f5b52c;
     text-align: center;
+}
+.four-title img{
+    height: 3rem;
 }
 
 .btn-submit{
@@ -432,13 +476,20 @@ body{
 
 /* 12 contact */
 
-
-.content-contact{
-
-   
+.contact-more-quote{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+}
+
+
+.content-contact{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0;
     
   
 }
@@ -462,6 +513,10 @@ body{
 
 .icon {
     margin: 0 0.7rem;
+}
+
+.icon img{
+    height: 2rem;
 }
 
 .contact-text {
@@ -499,6 +554,7 @@ body{
     justify-content: center;
     margin: auto;
     width: 20.5rem;
+    height: 20rem;
     
 
 }
@@ -514,9 +570,12 @@ body{
     flex-direction: column;
     background: #161616;
     box-shadow: 0 10px 20px rgba(0,0,0,3);
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
 }
 
+.img-footer img{
+    height: 2rem;
+}
 
 .box-footer{
     margin: 0.5rem auto;
@@ -541,6 +600,10 @@ body{
 @media (min-width:720px){
 
     /* navbar */
+
+    .hero{
+        margin-top: 5rem;
+    }
 
     .navbar{
         
@@ -576,6 +639,7 @@ body{
     .sub-box-nav{
         margin: 0 0.2rem;
     }
+    
 
     .box-nav-bar span{
         color: white;
@@ -613,6 +677,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+       
         
     }
     .content-quote-desktop:nth-last-child(1)  {
@@ -632,8 +697,9 @@ body{
     }
 
     .content-quote-desktop img:nth-last-child(2) {
-        height: 3rem;
+        height: 3.5rem;
         width: 16rem;
+   
       
     }
     /* pendiente */
@@ -704,7 +770,7 @@ body{
         margin: 4rem auto;
     }
 
-    /* 9) content more info  */
+   
 
     
     .main-content-information{
@@ -742,11 +808,12 @@ body{
 
    .box-information p{
      
-       width: 40rem;
+       width: 28rem;
    }
 
     .box-information img{
-        height: 9rem;
+        width: 7rem;
+        height: 8rem;
        
     }
    
@@ -754,10 +821,44 @@ body{
 
 }
 
+@media (min-width:1024px){
+
+    /* imagen rivas joyas */
+
+    .content-quote-desktop img:nth-last-child(2) {
+        height: 4rem !important;
+        width: 16rem;
+
+    }
+
+    .contact-more-quote{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        
+     }
+
+     .four-title img{
+        height: 4rem;
+    }
+     
+     .map{
+         width: 30rem;
+         height: 20rem;
+     }
+
+    
+    
+
+}
+
+
 
 
 
 @media (min-width:1200px){
+
+    /* 7) buy boxes  */
 
     .content-buy-boxes{
        
@@ -777,6 +878,53 @@ body{
         width: 19rem;
     }
   /* pendiente */
+
+
+    /* 9) content more info  */
+
+    .box-information p{
+        
+        width: 40rem;
+    }
+
+    .box-information img{
+        width: 7rem;
+        height: 8rem;
+        
+    }
+
+    /* 12) contact */
+
+     /* 9) content more info  */
+
+   
+     .contact-more-quote{
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       
+    }
+
+    .map{
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: #161616;
+        box-shadow: 0 10px 20px rgba(0,0,0,3);
+        margin: 4rem auto 0 auto;
+        height: 6rem;
+    }
+
+    
+    
+
+ 
 
 }
 

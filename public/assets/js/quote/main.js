@@ -1,6 +1,12 @@
 var form_quote = document.getElementById('form_quote');
 var route = document.getElementById('form_quote').action;
 
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+
         form_quote.addEventListener('submit',function(e){
             e.preventDefault();
 
@@ -33,8 +39,13 @@ var route = document.getElementById('form_quote').action;
             url:route,
             type:'POST',
             data:form_data.serialize(),
-            beforeSend:function(){},
+            beforeSend:function(){
+                showLoader('.btn-send','.loaderBtn','.txtSend');
+            },
             }).done(function(response){
+
+               hideLoader('.btn-send','.loaderBtn','.txtSend','Enviar')
+                  
                 if(response[0].name){
 
                     alertNegative(response[0].name);
@@ -50,13 +61,95 @@ var route = document.getElementById('form_quote').action;
 
                 }else if(response[0].success){
                     
+                    $("#form_quote").trigger("reset");
                     alertPositive('Enviado correctamente');
                     return false;
                 }
             })
 
         })
+        
+var route_Statistic = $("meta[name='routeName']").attr("content");  
 
+$(document).on('click','.facebook_nav',function(){
+
+    click('facebook_nav');
+
+}) 
+$(document).on('click','.instagram_nav',function(){
+
+    click('instagram_nav');
+
+}) 
+$(document).on('click','.sell_gold_desktop',function(){
+
+    click('sell_gold_desktop');
+
+}) 
+$(document).on('click','.quote_desktop',function(){
+
+    click('quote_desktop');
+
+}) 
+$(document).on('click','.sell_gold_mobile',function(){
+
+    click('sell_gold_mobile');
+
+}) 
+$(document).on('click','.quote_mobile',function(){
+
+    click('quote_mobile');
+
+}) 
+$(document).on('click','.phone_one',function(){
+
+    click('phone_one');
+
+}) 
+$(document).on('click','.phone_two',function(){
+
+    click('phone_two');
+
+}) 
+$(document).on('click','.email',function(){
+
+    click('email');
+
+}) 
+$(document).on('click','.instagram_footer_mobile',function(){
+
+    click('instagram_footer_mobile');
+
+}) 
+$(document).on('click','.facebook_footer_mobile',function(){
+
+    click('facebook_footer_mobile');
+
+}) 
+$(document).on('click','.contact_whatsapp',function(){
+
+    click('contact_whatsapp');
+
+}) 
+
+function click(click){
+
+    const object = {
+        click
+    }
+
+    $.ajax({
+    url:route_Statistic,
+    type:'POST',
+    data:object,
+    beforeSend:function(){},
+    }).done(function(response){
+      
+    })
+
+}
+
+      
  
    
 function alertPositive(text){
@@ -76,6 +169,27 @@ function alertNegative(text){
         timer: 1500
       });
 }
+
+ // LOADER
+
+
+ function showLoader(idParent,btnClass,txtClass){
+
+    $(idParent +' '+ btnClass).removeClass('hiddenLoader');
+    $(idParent +' '+ txtClass).attr('disabled',true);
+    $(idParent +' '+ txtClass).text('');
+  
+  }
+  
+  function hideLoader(idParent,btnClass,txtClass,txtBtn){
+  
+    $(idParent +' '+ btnClass).addClass('hiddenLoader');
+    $(idParent +' '+ txtClass).attr('disabled',false);
+    $(idParent +' '+ txtClass).text(txtBtn);
+  }
+  
+
+ 
 
 
   
